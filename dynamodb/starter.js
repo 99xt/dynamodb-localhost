@@ -45,6 +45,7 @@ var starter = {
         var child = spawn('java', args, {
             cwd: db_dir,
             env: process.env,
+            detached: true,
             stdio: ['pipe', 'pipe', process.stderr]
         });
 
